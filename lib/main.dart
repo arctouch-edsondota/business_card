@@ -19,11 +19,9 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
-              child: CircleAvatar(
-                radius: 50.0,
-                backgroundImage: AssetImage('images/picture.png'),
-              ),
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/picture.png'),
             ),
             Text(
               'Edson Dota',
@@ -41,7 +39,7 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.5,
               ),
             ),
-            Container(
+            SizedBox(
               height: 20.0,
               width: 150.0,
               child: Divider(
