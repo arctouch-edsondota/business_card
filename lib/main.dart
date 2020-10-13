@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
             ),
             Text(
               'Edson Dota',
-              style: TextStyle(
+              style: GoogleFonts.pacifico(
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
             ),
             Text(
               'Flutter Developer'.toUpperCase(),
-              style: TextStyle(
+              style: GoogleFonts.sourceSansPro(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.teal.shade100,
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
                     ),
                     Text(
                       '+55 47 99232-1601',
-                      style: TextStyle(
+                      style: GoogleFonts.sourceSansPro(
                         fontSize: 20,
                         color: Colors.teal.shade900,
                       ),
@@ -93,7 +94,7 @@ class MyApp extends StatelessWidget {
                     ),
                     Text(
                       'edson.dota@arctouch.com',
-                      style: TextStyle(
+                      style: GoogleFonts.sourceSansPro(
                         fontSize: 20,
                         color: Colors.teal.shade900,
                       ),
