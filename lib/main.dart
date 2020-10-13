@@ -1,3 +1,5 @@
+import 'package:business_card/contact_info.dart';
+import 'package:business_card/text_styling.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
             ),
             Text(
               'Flutter Developer'.toUpperCase(),
-              style: TextFormating.contactStyle().copyWith(
+              style: TextStyling.contactStyle().copyWith(
                 fontWeight: FontWeight.bold,
                 color: Colors.teal.shade100,
                 letterSpacing: 2.5,
@@ -46,48 +48,17 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal.shade100,
               ),
             ),
-            Card(
-              margin: EdgeInsets.symmetric(
-                vertical: 10,
-                horizontal: 25,
-              ),
-              child: ListTile(
-                leading: Icon(
-                  Icons.phone,
-                ),
-                title: Text(
-                  '+55 47 99232-1601',
-                  style: TextFormating.contactStyle(),
-                ),
-              ),
+            ContactInfo(
+              title: '+55 47 99232-1601',
+              icon: Icons.phone,
             ),
-            Card(
-              margin: EdgeInsets.symmetric(
-                vertical: 10,
-                horizontal: 25,
-              ),
-              child: ListTile(
-                title: Text(
-                  'edson.dota@arctouch.com',
-                  style: TextFormating.contactStyle(),
-                ),
-                leading: Icon(
-                  Icons.email,
-                ),
-              ),
+            ContactInfo(
+              title: 'edson.dota@arctouch.com',
+              icon: Icons.email,
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-extension TextFormating on TextStyle {
-  static TextStyle contactStyle() {
-    return GoogleFonts.sourceSansPro(
-      fontSize: 20,
-      color: Colors.teal.shade900,
     );
   }
 }
