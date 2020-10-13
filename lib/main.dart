@@ -35,8 +35,7 @@ class MyApp extends StatelessWidget {
             ),
             Text(
               'Flutter Developer'.toUpperCase(),
-              style: GoogleFonts.sourceSansPro(
-                fontSize: 20,
+              style: TextFormating.contactStyle().copyWith(
                 fontWeight: FontWeight.bold,
                 color: Colors.teal.shade100,
                 letterSpacing: 2.5,
@@ -67,10 +66,7 @@ class MyApp extends StatelessWidget {
                     ),
                     Text(
                       '+55 47 99232-1601',
-                      style: GoogleFonts.sourceSansPro(
-                        fontSize: 20,
-                        color: Colors.teal.shade900,
-                      ),
+                      style: TextFormating.contactStyle(),
                     ),
                   ],
                 ),
@@ -94,11 +90,8 @@ class MyApp extends StatelessWidget {
                     ),
                     Text(
                       'edson.dota@arctouch.com',
-                      style: GoogleFonts.sourceSansPro(
-                        fontSize: 20,
-                        color: Colors.teal.shade900,
-                      ),
-                    ),
+                      style: TextFormating.contactStyle(),
+                    )
                   ],
                 ),
               ),
@@ -106,6 +99,15 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+extension TextFormating on TextStyle {
+  static TextStyle contactStyle() {
+    return GoogleFonts.sourceSansPro(
+      fontSize: 20,
+      color: Colors.teal.shade900,
     );
   }
 }
