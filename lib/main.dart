@@ -48,51 +48,33 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal.shade100,
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10,
                 horizontal: 25,
               ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5.0),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                    ),
-                    Text(
-                      '+55 47 99232-1601',
-                      style: TextFormating.contactStyle(),
-                    ),
-                  ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                ),
+                title: Text(
+                  '+55 47 99232-1601',
+                  style: TextFormating.contactStyle(),
                 ),
               ),
             ),
-            Container(
+            Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10,
                 horizontal: 25,
               ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(5.0),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                    ),
-                    Text(
-                      'edson.dota@arctouch.com',
-                      style: TextFormating.contactStyle(),
-                    )
-                  ],
+              child: ListTile(
+                title: Text(
+                  'edson.dota@arctouch.com',
+                  style: TextFormating.contactStyle(),
+                ),
+                leading: Icon(
+                  Icons.email,
                 ),
               ),
             ),
