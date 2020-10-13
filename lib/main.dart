@@ -15,6 +15,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+// Apply the font to whole app
+//        textTheme: GoogleFonts.latoTextTheme(
+//          Theme.of(context).textTheme,
+//        ),
       ),
       home: Scaffold(
         backgroundColor: Colors.teal,
